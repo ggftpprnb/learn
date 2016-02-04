@@ -9,8 +9,8 @@ public class Constants {
      * 微信公众号的一些常量，如appId，appSecret等
      */
     public static class WxConstants {
-        public static final String APP_ID = "wxde015bf6f683bca7";
-        public static final String APP_SECRET = "0d10378236067308509ccb65e3af5aec";
+        public static final String APP_ID = "";
+        public static final String APP_SECRET = "";
     }
 
     /**
