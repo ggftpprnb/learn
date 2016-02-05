@@ -46,8 +46,9 @@ public class WeChatApiUtilsTest {
         //List<String> channels = Lists.newArrayList("高德置地");
         //List<String> channels = Lists.newArrayList("海运集团","南湖国旅","无限极","立白","丰田","索尼");
         //List<String> channels = Lists.newArrayList("酷狗","统泰","泰奇");
-        List<String> channels = Lists.newArrayList("本来生活");
-        String accessToken = "dkqq_CxIP2qyfupkJf0EJPgjwZHh7UlxZXE8e1LqzhUmASXMgzYVN_da2N04FeypJvIqQcHR7A-VM6bv8UvjrNSBXOhqdFnyGsvM5loxUIJjVSYohmTaGEqS-6C-8dPuNMSjAHATSY";
+        //List<String> channels = Lists.newArrayList("本来生活");
+        List<String> channels = Lists.newArrayList("广发互推","会员特刊");
+        String accessToken = "SmLU__lum31POpGLeL30fntR0F9XXxKb-M1E8fpByLeYI2wZQAi7ZcEha-4_FUnm-iAOQ64sWN1yOIHxoHu5_iaugf1leCZEa3l4Jh98M4sSTGjAIANOB";
 
         channels.forEach(e->{
             ChannelUrlResult channelUrlResult = WeChatApiUtils.getForeverChannelUrlResult(e,accessToken);
