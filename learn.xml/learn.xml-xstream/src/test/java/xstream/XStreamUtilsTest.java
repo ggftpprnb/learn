@@ -15,7 +15,7 @@ public class XStreamUtilsTest {
         user.setId(1l);
         user.setUsername("zj");
 
-        final String xml = XStreamUtils.obj2xml(user);
+        final String xml = XStreamUtilss.obj2xml(user);
         System.out.println(xml);
     }
 
@@ -25,7 +25,7 @@ public class XStreamUtilsTest {
         user.setId(1l);
         user.setUsername("zj");
 
-        final String xml = XStreamUtils.obj2xml(Lists.newArrayList(user));
+        final String xml = XStreamUtilss.obj2xml(Lists.newArrayList(user));
         System.out.println(xml);
     }
 }
