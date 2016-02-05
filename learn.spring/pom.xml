@@ -15,14 +15,4 @@
         <module>learn.spring-webmvc</module>
     </modules>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>javax.servlet</groupId>
-                <artifactId>javax.servlet-api</artifactId>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
-
 </project>
