@@ -9,20 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>learn.spring</artifactId>
+    <artifactId>learn.xml</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>learn.spring-webmvc</module>
+        <module>learn.xml-xstream</module>
     </modules>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>javax.servlet</groupId>
-                <artifactId>javax.servlet-api</artifactId>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
 
 </project>
