@@ -4,6 +4,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import gson.GSonUtils;
 import httpclient.HttpClientUtils;
+import mp.button.Menu;
 import mp.req.GetForeverChannelUrlBody;
 import mp.req.GetMaterialListBody;
 import mp.req.Long2ShortUrlBody;
@@ -81,7 +82,7 @@ public class WeChatApiUtils {
 
     /**
      * 获取微信素材列表
-     * @param type
+     * @param type      素材类型
      * @param offset
      * @param count
      */
@@ -103,6 +104,29 @@ public class WeChatApiUtils {
         }
 
         return result;
+    }
+
+
+    /**
+     * 创建微信菜单
+     *
+     * @param menu       菜单对象
+     * @param accessToken
+     * @return
+     */
+    public static boolean createMenu(Menu menu,String accessToken){
+        boolean success = false;
+
+        if(menu!=null && menu.getButton()!=null &&!menu.getButton().isEmpty()){
+            String targetUrl = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token="+accessToken;
+
+            String resp = HttpClientUtils.doPost(targetUrl,GSonUtils.toJsonString(menu));
+            if(isRightRequest(resp)){
+                success = true;
+            }
+        }
+
+        return success;
     }
 
 

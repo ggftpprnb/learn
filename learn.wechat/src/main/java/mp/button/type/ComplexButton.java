@@ -10,6 +10,11 @@ import java.util.List;
  */
 public class ComplexButton extends Button {
 
+    public ComplexButton(String name,List<SingleButton> subButton) {
+        super.name = name;
+        this.subButton = subButton;
+    }
+
     @SerializedName("sub_button")
     private List<SingleButton> subButton;
 
