@@ -2,14 +2,10 @@ package mp;
 
 import com.google.common.collect.Lists;
 import gson.GSonUtils;
-import mp.button.ButtonFactory;
-import mp.button.Menu;
-import mp.button.type.*;
+import mp.menu.*;
 import mp.result.ChannelUrlResult;
 import mp.result.Long2ShortUrlResult;
 import mp.result.MaterialListResult;
-import mp.token.AccessTokenInfo;
-import mp.token.ITokenInfo;
 import org.junit.Test;
 
 import java.util.List;
@@ -100,11 +96,27 @@ public class WeChatApiUtilsTest {
         ComplexButton secondButton = new ComplexButton("混合一",Lists.newArrayList(viewButton,viewLimitedButton,mediaIdButton,scanCodePushButton,scanCodeWaitMsgButton));
         ComplexButton thirdButton = new ComplexButton("混合二",Lists.newArrayList(locationSelectButton,picPhotoOrAlbumButton,picSysPhotoButton,picWeiXinButton));
 
-        Menu menu = new Menu(Lists.newArrayList(singleButton,secondButton,thirdButton));
+        Menu menu = new DefaultMenu(Lists.newArrayList(singleButton,secondButton,thirdButton));
 
         boolean success = WeChatApiUtils.createMenu(menu, accessToken);
         System.out.println(success);
 
+    }
+
+    @Test
+    public void createConditionalMenu_test(){
+
+        String accessToken = "stNTuWVO5I9AYlDibxanVXvN-Cc6azOEfFsiVDX2wDbVKRstGweIgbSsuDqmhaDsog1Gxotx4-dRSAiQyscb6QZFXEzMl3NkzunSe3N8MUChe-SX29EQQomECgoQP_F3SKLfACABTU";
+
+        SingleButton cityButton = ButtonFactory.createClickButton("清远","qy");
+
+        MenuCondition.City city = MenuConditionFactory.createCityCondition("清远");
+        MenuCondition.Province province = MenuConditionFactory.createProvinceCondition("广东");
+        MenuCondition.Country country = MenuConditionFactory.createCountryCondition("中国");
+
+        ConditionalMenu conditionalMenu = MenuFactory.createConditionalMenu(Lists.newArrayList(city, province, country), Lists.newArrayList(cityButton));
+        boolean success = WeChatApiUtils.createMenu(conditionalMenu,accessToken);
+        System.out.println(success);
     }
 
     @Test

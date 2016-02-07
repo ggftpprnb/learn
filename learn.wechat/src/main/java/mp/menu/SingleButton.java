@@ -1,6 +1,4 @@
-package mp.button.type;
-
-import mp.button.Button;
+package mp.menu;
 
 /**
  * Created by jian01.zhu on 2016/2/5.

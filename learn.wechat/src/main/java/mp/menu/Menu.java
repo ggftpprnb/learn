@@ -1,24 +1,18 @@
-package mp.button;
-
-import mp.button.type.ComplexButton;
+package mp.menu;
 
 import java.util.List;
 
 /**
  * Created by jian01.zhu on 2016/2/5.
  */
-public class Menu {
+public abstract class Menu {
 
-    public Menu(List<Button> button) {
-        validateButton(button);
-        this.button = button;
-    }
 
     /**
      * 创建菜单对象时，验证菜单按钮是否正确
      * @param buttons
      */
-    private void validateButton(List<Button> buttons){
+    protected void validateButton(List<Button> buttons){
         if(buttons==null || buttons.isEmpty()){
             throw new IllegalArgumentException("按钮为空");
         }

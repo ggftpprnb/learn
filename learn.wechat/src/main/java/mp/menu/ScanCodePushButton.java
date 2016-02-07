@@ -1,4 +1,4 @@
-package mp.button.type;
+package mp.menu;
 
 /**
  * 扫码推事件

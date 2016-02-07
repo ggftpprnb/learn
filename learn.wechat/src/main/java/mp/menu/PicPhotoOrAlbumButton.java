@@ -1,4 +1,4 @@
-package mp.button.type;
+package mp.menu;
 
 /**
  * 弹出拍照或者相册发图

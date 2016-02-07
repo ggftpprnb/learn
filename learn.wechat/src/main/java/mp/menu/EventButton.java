@@ -1,4 +1,4 @@
-package mp.button.type;
+package mp.menu;
 
 /**
  * Created by zhujian on 2016/2/6.

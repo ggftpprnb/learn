@@ -1,4 +1,4 @@
-package mp.button.type;
+package mp.menu;
 
 /**
  * 点击推事件。

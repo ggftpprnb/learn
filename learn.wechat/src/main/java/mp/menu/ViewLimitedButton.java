@@ -1,4 +1,4 @@
-package mp.button.type;
+package mp.menu;
 
 import com.google.gson.annotations.SerializedName;
 

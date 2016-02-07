@@ -1,7 +1,6 @@
-package mp.button.type;
+package mp.menu;
 
 import com.google.gson.annotations.SerializedName;
-import mp.button.Button;
 
 import java.util.List;
 
