@@ -1,4 +1,4 @@
-package mp.token;
+package mp.function.token;
 
 /**
  * Created by jian01.zhu on 2016/2/3.
@@ -7,27 +7,27 @@ public interface ITokenInfo {
 
 
     /**
-     * 使用redis进行进程锁，获取进程锁的key
+     * 鑾峰彇redis涓繘绋嬮攣鐨刱ey
      * @return
      */
     String getRedisLockKey();
 
 
     /**
-     * 获取令牌的redis key
+     * 鑾峰彇token鍦╮edis鐨刱ey
      * @return
      */
     String getRedisKey();
 
 
     /**
-     * 获取令牌的备份redis key
+     * 鑾峰彇澶囦唤token鍦╮edis涓殑key
      * @return
      */
     String getRedisBackUpKey();
 
     /**
-     * 获取新的令牌
+     * 鑾峰彇鏈�鏂扮殑token,杩欓噷浼氶噸鏂板幓璇锋眰寰俊Api
      * @return
      */
     String getToken();

@@ -4,7 +4,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import gson.GSonUtils;
 import httpclient.HttpClientUtils;
-import mp.menu.Menu;
+import mp.function.menu.Menu;
 import mp.req.GetForeverChannelUrlBody;
 import mp.req.GetMaterialListBody;
 import mp.req.Long2ShortUrlBody;

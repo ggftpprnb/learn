@@ -1,4 +1,4 @@
-package mp.menu;
+package mp.function.menu;
 
 /**
  * 扫码推事件且弹出“消息接收中”提示框

@@ -2,6 +2,7 @@ package mp;
 
 import com.google.common.collect.Lists;
 import gson.GSonUtils;
+import mp.function.menu.*;
 import mp.menu.*;
 import mp.result.ChannelUrlResult;
 import mp.result.Long2ShortUrlResult;

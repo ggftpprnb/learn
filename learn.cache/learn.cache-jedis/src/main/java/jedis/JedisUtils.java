@@ -15,9 +15,9 @@ public class JedisUtils {
 
     static {
         JedisPoolConfig jedisPoolConfig = new JedisPoolConfig();
-        jedisPoolConfig.setMaxActive(500);
+        jedisPoolConfig.setMaxTotal(500);
         jedisPoolConfig.setMaxIdle(50);
-        jedisPoolConfig.setMaxWait(500);
+        jedisPoolConfig.setMaxWaitMillis(500);
         jedisPoolConfig.setTestOnBorrow(true);
 
         JedisShardInfo jedisShardInfo = new JedisShardInfo("10.199.250.206", 6379);
@@ -186,6 +186,7 @@ public class JedisUtils {
 
     private static void returnBrokenResource(ShardedJedis shardedJedis) {
         try {
+            shardedJedis.close();
             shardedJedisPool.returnBrokenResource(shardedJedis);
         } catch (Exception e) {
             e.printStackTrace();

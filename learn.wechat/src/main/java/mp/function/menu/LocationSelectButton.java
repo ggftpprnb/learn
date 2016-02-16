@@ -1,4 +1,4 @@
-package mp.menu;
+package mp.function.menu;
 
 /**
  *

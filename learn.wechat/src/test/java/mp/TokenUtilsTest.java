@@ -1,7 +1,7 @@
 package mp;
 
-import mp.token.AccessTokenInfo;
-import mp.token.ITokenInfo;
+import mp.function.token.AccessTokenInfo;
+import mp.function.token.ITokenInfo;
 import org.junit.Test;
 
 /**

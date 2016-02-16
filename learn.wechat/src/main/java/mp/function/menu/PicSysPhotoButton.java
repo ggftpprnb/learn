@@ -1,4 +1,4 @@
-package mp.menu;
+package mp.function.menu;
 
 /**
  * 弹出系统拍照发图
