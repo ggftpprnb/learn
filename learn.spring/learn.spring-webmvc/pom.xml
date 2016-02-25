@@ -4,7 +4,7 @@
         <artifactId>learn.spring</artifactId>
         <groupId>ggftpprnb</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../../learn.spring/pom.xml</relativePath>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>learn.spring-webmvc</artifactId>
@@ -61,6 +61,10 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-websocket</artifactId>
         </dependency>
     </dependencies>
 

@@ -1,7 +1,6 @@
-package mp.button.type;
+package mp.function.menu;
 
 import com.google.gson.annotations.SerializedName;
-import mp.button.Button;
 
 import java.util.List;
 
@@ -9,6 +8,11 @@ import java.util.List;
  * Created by jian01.zhu on 2016/2/5.
  */
 public class ComplexButton extends Button {
+
+    public ComplexButton(String name,List<SingleButton> subButton) {
+        super.name = name;
+        this.subButton = subButton;
+    }
 
     @SerializedName("sub_button")
     private List<SingleButton> subButton;

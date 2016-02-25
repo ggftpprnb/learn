@@ -1,4 +1,4 @@
-package mp.token;
+package mp.function.token;
 
 
 import gson.GSonUtils;

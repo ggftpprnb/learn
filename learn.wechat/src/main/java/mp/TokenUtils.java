@@ -1,9 +1,9 @@
 package mp;
 
 import jedis.JedisUtils;
-import mp.token.AccessTokenInfo;
-import mp.token.ITokenInfo;
-import mp.token.JsApiTicketInfo;
+import mp.function.token.AccessTokenInfo;
+import mp.function.token.ITokenInfo;
+import mp.function.token.JsApiTicketInfo;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.Objects;
